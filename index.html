@@ -8,182 +8,50 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-
-    header {
-      background-color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
-    }
-
-    nav a {
-      color: #000;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    .container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .text {
-      text-align: center;
-      padding-top: 80px;
-
-    }
-
-    .button {
-      background-color: #f00;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #0f0;
-    }
-
-    .container {
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 20px;
-      background-size: contain;
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
 
 
-
-    }
-
-    .containe {
-
-      display: flex;
-
-      justify-content: space-between;
-
-      align-items: center;
-
-      margin-bottom: 20px;
-
-    }
-
-    .contact-info {
-
-      width: 30%;
-
-    }
-
-    .contact-form {
-
-      width: 60%;
-
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-
-      width: 100%;
-
-      padding: 10px;
-
-      margin-bottom: 10px;
-
-      border: 1px solid #ccc;
-
-      box-sizing: border-box;
-
-    }
-
-    .contact-form textarea {
-
-      height: 100px;
-
-    }
-
-    .contact-form button {
-
-      background-color: red;
-
-      color: white;
-
-      padding: 10px 20px;
-
-      border: none;
-
-      cursor: pointer;
-
-    }
-
-    #map {
-
-      height: 100%;
-
-    }
-
-    /* .responsive-image{
-  width: 100%;
-  height: auto;
-/* }
-    .fab {
-      margin: 0 5px;
-      color: #000;
-
-} */ 
-    p {
-      padding: 50px;
-    }
-  </style>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <h1 style="background-color: #f00;">Logo PG</h1>
-      <div>
-        <a href="#">HOME</a>
-        <a href="#">ACTIVITIES</a>
-        <a href="#">LOCATION</a>
-        <a href="#">ABOUT</a>
-      </div>
-      <div>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+  <header class="fixed-top">
+    <!-- menu bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo PG</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ACTIVITIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LOCATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
       </div>
     </nav>
+  </header>
   </header>
 
   <main>
     <div class="">
-      <!-- courosal -->
+      <!-- image courosal -->
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
@@ -209,10 +77,11 @@
       </div>
     </div>
     </div>
-    <div class="text" style="border: 2px #000;">
 
-      <h1>ABOUT ITALIA PG</h1>
-      <p>Italia PG is a cozy and welcoming guesthouse located in the heart of the city. Our mission is to provide a
+    <!-- about page  -->
+    <div class="text" style="border: 2px #000; height: 600px; background-image: url(https://images.pexels.com/photos/697224/pexels-photo-697224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+      <h1 style="font-family: 'Arial', sans-serif; font-size: 3em; text-align: center; margin-top: 20px;">ABOUT</h1>
+      <p style="width: 500px; text-align: center; margin: 0 auto;">Italia PG is a cozy and welcoming guesthouse located in the heart of the city. Our mission is to provide a
         comfortable and enjoyable stay for our guests. We take pride in offering premium rooms and excellent service to
         ensure a memorable experience for everyone. This is the perfect place for travelers to relax and feel at home
         while exploring the vibrant surroundings of the city.</p>
@@ -220,122 +89,124 @@
     </div>
   </main>
 
-
   <div class="text p-5">
-
-    <h1>01</h1>
-
-    <h2>Premium Accommodation</h2>
-
-    <p>Experience the luxury of our well-appointed shared rooms, designed to provide both comfort and privacy. Whether
-      you're traveling solo or with friends, our shared rooms offer a perfect blend of convenience and affordability,
-      making your stay truly enjoyable.</p>
-
-    <button class="button">EXPLORE</button>
+   <img src="./about/01.png">
+   <img src="./about/Screenshot from 2025-01-13 22-20-09.png">
+   <img src="./about/Screenshot from 2025-01-13 22-20-25.png">
   </div>
 
 
+  <!-- contact page -->
   <div class="containe" style="border: 1px solid #000 ;
   padding: 60px;">
 
     <div class="contact-info">
       <p>
-        <i class="fas fa-map-marker-alt" style="margin-right: 10px; font-size: 1.5em;"></i> 500 Terry Francine St., ITALY, CA 94158
+        <i class="fas fa-map-marker-alt" style="margin-right: 10px; font-size: 1.5em;"></i> 500 Terry Francine St.,
+        ITALY
       </p>
       <p>
-        <i class="fas fa-phone-alt" style="margin-right: 10px; font-size: 1.5em;" ></i> 123-456-7890
+        <i class="fas fa-phone-alt" style="margin-right: 10px; font-size: 1.5em;"></i> 123-456-7890
       </p>
       <p>
         <i class="fas fa-envelope" style="margin-right: 10px; font-size: 1.5em;"></i> info@mysite.com
       </p>
-      <div>
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-linkedin-in"></a>
-        <a href="#" class="fab fa-instagram"></a>
+      <div class="text-center">
+        <a href="#" class="fab fa-facebook-f mx-2"></a>
+        <a href="#" class="fab fa-twitter mx-2"></a>
+        <a href="#" class="fab fa-linkedin-in mx-2"></a>
+        <a href="#" class="fab fa-instagram mx-2"></a>
       </div>
-
     </div>
 
-
-    <div class="contact-form">
-
+    <div class="card p-4 contact-form">
       <form action="#">
-
         <div>
-
           <label for="first-name">First Name</label>
-
           <input type="text" id="first-name" name="first-name" required>
-
         </div>
-
         <div>
-
           <label for="last-name">Last Name</label>
-
           <input type="text" id="last-name" name="last-name" required>
-
         </div>
-
         <div>
-
           <label for="email">Email</label>
-
           <input type="email" id="email" name="email" required>
-
         </div>
-
         <div>
-
           <label for="message">Message</label>
-
           <textarea id="message" name="message" required></textarea>
-
         </div>
-
         <button type="submit" class="button">Send Message</button>
-
       </form>
-
     </div>
   </div>
 
-  <!-- map -->
-  <div id="map">
-    <h1>google map here</h1>
+  <!--location page ! -->
+
+  <div id="map" style="height: 500px;">
+    <h1 class="text-center"> WE LOCATED</h1>
+    <div style="background-size: contain; display: flex; justify-content: center; align-items: center; height: 100%;">
+      <img src="./image.png" style="">
+    </div>
   </div>
 
-  <!-- <script>
-  
-      function initMap() {
-  
-          const map = new google.maps.Map(document.getElementById("map"), {
-  
-              center: { lat: 37.7749, lng: -122.4194 },
-  
-              zoom: 14,
-  
-          });
-  
-          const marker = new google.maps.Marker({
-  
-              position: { lat: 37.7749, lng: -122.4194 },
-  
-              map: map,
-  
-          });
-  
-      }
-  
-  </script>
-  
-  <script async defer
-  
-          src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-  
-  </script> -->
+  <script>
+    let map;
 
+    async function initMap() {
+      const { Map } = await google.maps.importLibrary("maps");
+
+      map = new Map(document.getElementById("map"), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8,
+      });
+    }
+
+    initMap();
+  </script>
+
+  <!-- to get own api  -->
+  <script>(g => {
+      var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => {
+        await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a)
+      })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+    })
+      ({ key: "INSERT_YOUR_API_KEY", v: "weekly" });</script>
+
+
+<!-- footer  -->
+  <footer class="text-white bg-dark">
+    <div class="d-block" style="height: 100px;">
+      <div class="row">
+        <div class="col d-flex ">
+          <p>Logo Italia Pg</p>
+        </div>
+        <div class="col d-flex p-4">
+          <p>500 Terry Francine Street</p>
+          <p>Italy, CA 94158</p>
+          <p>infoitalia@mysite.com</p>
+        </div>
+       
+        <div class="col mt-5">
+          <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+        </div>
+        </ul>
+      </div>
+    </div>
+    
+    </div>
+  
+    </div>
+    <div class="col-md-12">
+      <center>
+        <p class="copyright mt-5" style="font-size: smaller;">&copy; 2025 by ITALIA PG. Powered and secured by criz</p>
+      </center>
+    </div>
+  </footer>
 </body>
 
 </html>
